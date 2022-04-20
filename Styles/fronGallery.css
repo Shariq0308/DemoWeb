@@ -1,0 +1,136 @@
+
+.wrapper-gallery{
+    top: 1000px;
+    margin: 0 5vw;
+}
+
+#fontier-gallery{
+    z-index: 1;
+    top: -10px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "img1 img2 img3 img4";
+    
+}
+
+.fontier-img{
+    width: 100%;
+    height: 360px;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+#fontier-gallery .img1{
+        grid-area: img1;
+        background-image: url("../Pictures/Mid1.jpg");
+}
+
+#fontier-gallery .img2{
+    grid-area: img2;
+    background-image: url("../Pictures/Mid2.jpg");
+}
+
+#fontier-gallery .img3{
+    grid-area: img3;
+    background-image: url("../Pictures/Mid3.jpg");
+}
+
+#fontier-gallery .img4{
+    grid-area: img4;
+    background-image: url("../Pictures/Mid4.jpg");
+}
+
+.fontier-img div{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+}
+
+.fontier-img a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.fontier-img div:hover{
+    opacity: 0.5;
+    transition: all ease-in-out 100ms;
+}
+
+
+
+  /* New Change */
+
+.img-window{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.img-window img{
+    max-height: 80vh;
+    max-width: 80vw;
+}
+
+
+.img-btn-next {
+    
+    display: block;
+    padding: 6px 10px;
+    border-radius: 4px;
+    background-color: #111111;
+    position: fixed;
+    top: 48vh;
+    z-index: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    
+}
+
+.img-btn-next:hover {
+    opacity: 0.8;
+}
+
+.img-btn-prev {
+    
+    display: block;
+    padding: 6px 10px;
+    border-radius: 4px;
+    background-color: #111111;
+    position: fixed;
+    top: 48vh;
+    z-index: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.img-btn-prev:hover {
+    opacity: 0.8;
+}
+
+
+
+
