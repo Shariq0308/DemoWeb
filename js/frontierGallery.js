@@ -12,7 +12,7 @@ if(galleryImages){
         {
             let getElementCss = window.getComputedStyle(image);
             let getFullImgUrl = getElementCss.getPropertyValue("background-image");
-            let getImgUrlPos = getFullImgUrl.split("/Pictures/");
+            let getImgUrlPos = getFullImgUrl.split("/DemoWeb/Pictures/");
             /*alert(getFullImgUrl);*/
             let setNewImgUrl = getImgUrlPos[1].replace('")', '');
             /*alert(setNewImgUrl);*/
@@ -29,7 +29,7 @@ if(galleryImages){
             let newImg = document.createElement("img");
             
             newImgWindow.appendChild(newImg);
-            newImg.setAttribute("src", "/Pictures/" + setNewImgUrl);
+            newImg.setAttribute("src", "/DemoWeb/Pictures/" + setNewImgUrl);
             newImg.setAttribute("id", "current-img");
 
             newImg.onload = function() {
@@ -92,7 +92,7 @@ function changeImg(changeDir)
         }
     }
 
-    newImg.setAttribute("src", "/Pictures/Mid" + calcNewImage +".jpg");
+    newImg.setAttribute("src", "/DemoWeb/Pictures/Mid" + calcNewImage +".jpg");
     newImg.setAttribute("id", "current-img");
     
     getlatestOpenedImg = calcNewImage;
